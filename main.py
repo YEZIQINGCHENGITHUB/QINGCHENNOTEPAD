@@ -59,7 +59,7 @@ def Hello():
             ha.pack()
             op.pack()
             ne.pack()
-            def made():
+            def Close():
                 sa=easygui.buttonbox("关闭选项（点击右上角的X会自动关闭）","清晨记事本",choices=('保存','不保存','取消','关闭'))
                 #询问是否保存
                 if sa=="取消":
@@ -72,7 +72,7 @@ def Hello():
                 if sa=="保存":
                     save()
             #定义两个按钮
-            WINDOW.protocol("WM_DELETE_WINDOW",made)
+            WINDOW.protocol("WM_DELETE_WINDOW",Close)
             #执行关闭询问函数
             WINDOW.mainloop()
             
